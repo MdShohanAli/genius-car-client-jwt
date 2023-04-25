@@ -5,7 +5,7 @@ const AddService = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/services`
+        const url = `https://genius-car-server-jwt-six.vercel.app/services`
         console.log(url);
         fetch(url, {
             method: 'POST',
